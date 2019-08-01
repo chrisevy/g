@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Gossip_project : Pair-programming @Chrisevy & @Grégoire 
 
-Things you may want to cover:
+---------------------------------------------------> The Gossip Project  ---------------------------------------------->
 
-* Ruby version
+Allez, on va poser les bases de notre fameux Gossip Project pour le transcrire en Rails. Et comme je te l'ai expliqué, la première étape est la modélisation de sa BDD ! 
+Le parcours utilisateur est le suivant : sur ce super réseau social, un utilisateur va s'inscrire, renseigner son prénom et nom, son mail et son age, puis il précisera sa ville avec une recherche par code postal. 
+Il aura ensuite toutes les fonctionnalités qui feront de cette appli une future licorne de la Bitchin'Tech :
 
-* System dependencies
+Les utilisateurs peuvent créer des potins 
+Les utilisateurs, en créant des potins, peuvent mettre un ou plusieurs tags sur les potins 
 
-* Configuration
+--------------------------------------------------> Lancer le airbnb --------------------------------------------------->
+1 - Download Zip
 
-* Database creation
+Dans le terminal: 
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+2 - Lancer " bundle Install ".
+3 - Lancer " rails db:seed ".
+4 - Lancer " rails c " ou " rails console ".
