@@ -8,11 +8,7 @@
 
 require 'faker'
 
-City.destroy_all
-Tag.destroy_all
-Gossip.destroy_all
-JoinTableTagGossip.destroy_all
-User.destroy_all
+
 
 tag_array= ["#Bromance", "#PasDamalGame", "#EnMarche", "#LesPauvres", "#LesRiches", "#LesAutres", 
 "#LesRoux", "#JPP", "#VDM", "#NoHomo"]
