@@ -12,10 +12,13 @@ Les utilisateurs peuvent créer des potins
 Les utilisateurs, en créant des potins, peuvent mettre un ou plusieurs tags sur les potins 
 
 --------------------------------------------------> Lancer le airbnb --------------------------------------------------->
+
 1 - Download Zip
 
 Dans le terminal: 
 
 2 - Lancer " bundle Install ".
+
 3 - Lancer " rails db:seed ".
+
 4 - Lancer " rails c " ou " rails console ".
