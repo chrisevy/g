@@ -29,8 +29,12 @@ ActiveRecord::Schema.define(version: 2019_08_01_172017) do
   end
 
   create_table "join_table_tag_gossips", force: :cascade do |t|
+    t.integer "tag_id"
+    t.integer "gossip_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["gossip_id"], name: "index_join_table_tag_gossips_on_gossip_id"
+    t.index ["tag_id"], name: "index_join_table_tag_gossips_on_tag_id"
   end
 
   create_table "private_messages", force: :cascade do |t|

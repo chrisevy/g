@@ -8,6 +8,11 @@
 
 require 'faker'
 
+City.destroy_all
+Tag.destroy_all
+Gossip.destroy_all
+JoinTableTagGossip.destroy_all
+User.destroy_all
 
 tag_array= ["#Bromance", "#PasDamalGame", "#EnMarche", "#LesPauvres", "#LesRiches", "#LesAutres", 
 "#LesRoux", "#JPP", "#VDM", "#NoHomo"]
@@ -23,16 +28,16 @@ end
         first_name: Faker::Name.first_name,
         last_name: Faker::Name.last_name,
         email: Faker::Internet.email,
-        age: rand(18..50)
-        #city: cities
+        age: rand(18..50),
+        city: cities
     )
 end
 20.times do
-    
+    users_rand = User.all.sample
     gossip = Gossip.create(
     title: Faker::Lorem.sentence,
     content: Faker::Lorem.paragraph(sentence_count: 3),
-    
+    user: users_rand 
     )
 end
 10.times do 

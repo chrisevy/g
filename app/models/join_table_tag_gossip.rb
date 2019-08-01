@@ -1,4 +1,4 @@
 class JoinTableTagGossip < ApplicationRecord
-    belongs_to :tag
-    belongs_to :gossip
+    belongs_to :tag, optional: true
+    belongs_to :gossip,optional: true
 end
